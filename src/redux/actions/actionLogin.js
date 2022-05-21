@@ -16,6 +16,7 @@ export const loginGoogle = ()=>{
         })
     }
 }
+//falta autenticar face 
 
 export const loginEmailPassAsync = (email, password)=>{
     return(dispatch)=>{

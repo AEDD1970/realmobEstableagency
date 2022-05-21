@@ -12,7 +12,7 @@ import { FcGoogle } from "react-icons/fc";
 
 const SignupSchema = Yup.object().shape({
   email: Yup.string()
-    .email("El texto ingresado debe ser de tipo pepito@gmail.com")
+    .email("El texto ingresado debe ser de tipo ejemplo@gmail.com")
     .min(5, "Email muy corto, ingresa un email mas largo")
     .max(50, "El email excede el maximo de caracteres permitidos")
     .required("El campo email es requerido"),
@@ -79,7 +79,7 @@ const Login = () => {
             </div>
             <div className="btn-login">
               <button type="submit" className="btn">
-                Submit
+                Continuar
               </button>
             </div>
 

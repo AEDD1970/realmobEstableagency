@@ -1,5 +1,5 @@
 export const FileUp = async (file) => {
-    const urlCloudinary = 'https://api.cloudinary.com/v1_1/academiageek1/upload'
+    const urlCloudinary = ''
     const formData = new FormData()
 
     formData.append('upload_preset', 'frontend9'); //conectar con cloudinary, en este caso en amazonas

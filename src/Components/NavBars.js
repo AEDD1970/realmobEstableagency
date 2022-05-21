@@ -29,14 +29,11 @@ const NavBars = () => {
               <Link to="/">About</Link>
             </li>
             <li className="item_nav">
-              <Link to="/addPropiedad">Property</Link>
+              <Link to="/">Property</Link>
             </li>
             <li className="item_nav">
-              <Link to="/listPropiedad">Ver</Link>
+              <Link to="/">Ver</Link>
             </li>
-           {/*  <li className="item_nav">
-              <Link to="/verPropiedad">Ver</Link>
-            </li> */}
             <li className="item_nav">
               <Link to="/">Pages</Link>
             </li>
@@ -48,24 +45,24 @@ const NavBars = () => {
             </li>
             <li className="item_nav">
               <Link to="/"> </Link>
-              <img src="https://res.cloudinary.com/academiageek1/image/upload/v1652937567/product-realmod/b0tzfhg9vd1t9dpvvmga.png" ></img>
+              <img src="https://res.cloudinary.com/veronicaduque/image/upload/v1653110608/RealMod/01_lgnh3a.png" ></img>
             </li>
 
             <li className="item_nav">
               <Link to="/"> </Link>
-              <img src="https://res.cloudinary.com/academiageek1/image/upload/v1652937731/product-realmod/p9uelt0rq6jgq7fxbfcp.png" ></img>
+              <img src="https://res.cloudinary.com/veronicaduque/image/upload/v1653110608/RealMod/02_oorvqi.png" ></img>
             </li>
             <li className="item_nav">
               <Link to="/"> </Link>
-              <img src="https://res.cloudinary.com/academiageek1/image/upload/v1652937735/product-realmod/brae3jujqaax6ctn4bxp.png" ></img>
+              <img src="https://res.cloudinary.com/veronicaduque/image/upload/v1653110608/RealMod/02_1_plbopd.png" ></img>
             </li>
             <li className="item_nav">
               <Link to="/"> </Link>
-              <img src="https://res.cloudinary.com/academiageek1/image/upload/v1652938146/product-realmod/utrauersmkgwwuirt5q5.png" ></img>
+              <img src="https://res.cloudinary.com/veronicaduque/image/upload/v1653110608/RealMod/04_mjse2n.png" ></img>
             </li>
             <li className="item_nav">
               <Link to="/"> </Link>
-              <img src="https://res.cloudinary.com/academiageek1/image/upload/v1652937849/product-realmod/bovqzsxqkvoed856y1hf.png" ></img>
+              <img src="https://res.cloudinary.com/veronicaduque/image/upload/v1653112199/RealMod/Group_1_fey1yk.png" ></img>
             </li>
 
             <li className="item_nav" onClick={logout}>

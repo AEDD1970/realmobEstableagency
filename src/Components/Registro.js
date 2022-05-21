@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 import "../style/Registro.css"
 import { useDispatch } from 'react-redux';
-import { RegisterAsyncronico } from '../redux/actions/actionRegister';
+
 import logo from '../image/Logo.png'
 
 
@@ -24,9 +24,6 @@ const Registro = () => {
 
     return (
         <div className="divRegistro">
-         {/*    <div className="svg-img">
-                <img src={wave} alt='wave' />
-            </div> */}
             <div className="logoRegistro">
                 <img src={logo} alt='logo' />
             </div>
@@ -39,9 +36,7 @@ const Registro = () => {
                     pass2: ''
                 }}
                 validationSchema={SignupSchema}
-                onSubmit={values => {
-                    dispatch(RegisterAsyncronico(values.nombre, values.email, values.pass1))
-                }}
+             
             >
                 {({ errors, touched }) => (
                     <Form className="formRegister">
