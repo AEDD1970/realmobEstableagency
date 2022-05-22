@@ -1,0 +1,54 @@
+.FeaturedCard{
+    width: 307px;
+    height: 280px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;   
+    gap: 20px;
+
+    span{
+        font-size: 24px;
+        font-weight: 600;
+        
+    }
+}
+
+.MuiCard-root {
+    border-radius: 20px !important;
+}
+
+.contentIcon {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #E9FFFA;
+}
+
+.sectionTwoCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.textContainer{
+    background: url(https://res.cloudinary.com/dwbno71qd/image/upload/v1653258993/Realmod/Featured_ir3mnx.png) center center no-repeat;
+    width: 300px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    text-align: center;
+    >span{
+        font-weight: 600;
+        font-size: 20px;
+        color: #00C194;
+    }
+    >h2{
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+}
+

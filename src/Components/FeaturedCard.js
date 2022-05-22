@@ -1,24 +1,20 @@
 import  React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import "../style/FeaturedCard.scss";
 
 function FeaturedCards() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 307 }} >
     <CardActionArea>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
+      <CardContent className="FeaturedCard" >
+          <div className='contentIcon'>
+        <img src='https://res.cloudinary.com/dwbno71qd/image/upload/v1653254028/Realmod/parking-area_1_nmpkt0.png' />
+          </div>
+          <div className='featuredText'>
+          <span>Parking Space</span>
+          </div>
       </CardContent>
     </CardActionArea>
   </Card>
