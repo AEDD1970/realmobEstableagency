@@ -1,6 +1,7 @@
 import React from 'react'
 import {Navigate, Route, Routes } from 'react-router-dom'
-import Home from '../Components/Home'
+import Home from '../Components/home/Home'
+
 import NavBars from '../Components/NavBars'
 
 
