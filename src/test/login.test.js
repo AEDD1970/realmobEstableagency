@@ -2,7 +2,7 @@ import { loginReducers } from '../redux/reducers/loginReducers';
 import { typesLogin } from '../redux/types/types';
 
 var initiaSate ={}
-  describe("login, logout and register", () => {
+  describe("login, logout", () => {
     it("Should validate login", () => {
     
     const action = {
@@ -10,7 +10,7 @@ var initiaSate ={}
         payload: {email: "jarlingduqueduarte@gmail.com", password: '1234567890'}
     }
     const state = loginReducers(initiaSate, action)
-    console.log('state >>> ', state)
+
     
     expect(state).toEqual({email: "jarlingduqueduarte@gmail.com", password: '1234567890'})
     });

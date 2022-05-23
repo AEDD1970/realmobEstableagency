@@ -39,7 +39,7 @@ export default function SectionFourAgents() {
       </div>
       <div className="containerAgents">
         {data.map((item) => (
-          <Card sx={{ width: 270, minHeight: 275 }}>
+          <Card key={item} sx={{ width: 270, minHeight: 275 }}>
             <img src={item.image} className="image-card-agents" />
             <div className="description-card">
               <p>{item.name}</p>
