@@ -3,7 +3,11 @@ import FeaturedCards from '../FeaturedCard'
 
 function SectionTwoHome() {
   return (
-    <FeaturedCards/>
+    <div className='sectionTwoCont'>
+ 
+      <FeaturedCards/>
+      </div>
+   
   )
 }
 

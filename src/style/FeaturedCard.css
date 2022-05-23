@@ -1,0 +1,67 @@
+.FeaturedCard{
+    width: 307px;
+    height: 280px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;   
+    gap: 20px;
+
+}
+.FeaturedCard  span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.MuiCard-root {
+    border-radius: 20px !important;
+}
+
+.contentIcon {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #E9FFFA;
+}
+
+.sectionTwoCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centrado p {
+    font-weight: bold;
+    size: 40px;
+}
+.centrado span {
+    font-weight: bold;
+    size: 20px;
+    color: #00C194;
+}
+.section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.containerListings {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}

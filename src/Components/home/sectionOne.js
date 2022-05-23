@@ -9,7 +9,7 @@ const SectionOne = () => {
         <section className="homeContetnSectionOne">
             <div className="container">
                 <div className="container-text">
-                    <img src="https://res.cloudinary.com/veronicaduque/image/upload/v1653111130/RealMod/Properties_1_jf2hwh.png" />
+                    <img src="https://res.cloudinary.com/dwbno71qd/image/upload/v1653255900/Realmod/Properties_1_jf2hwh_qcixeq.png" />
                     <p className="textMargin">Find The Perfect Place to</p>
                         <p>Live With your Family</p>
                 </div>
@@ -41,7 +41,7 @@ const SectionOne = () => {
                         </select>
 
                         <div className="container-btn-search">
-                            <img src="https://res.cloudinary.com/veronicaduque/image/upload/v1653246830/RealMod/Icon_sm6ohm.png" />
+                            <img src="https://res.cloudinary.com/dwbno71qd/image/upload/v1653255920/Realmod/Icon_sm6ohm_bcvb32.png" />
                             <button type="submit">Search</button>
                         </div>
                     </div>

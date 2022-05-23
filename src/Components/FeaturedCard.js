@@ -1,27 +1,73 @@
-import  React from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import "../style/FeaturedCard.css";
 
 function FeaturedCards() {
+  const data = [
+    {
+      icon: "https://res.cloudinary.com/dwbno71qd/image/upload/v1653254028/Realmod/parking-area_1_nmpkt0.png",
+      description: "Parking Space"
+    },
+    {
+      icon: "https://res.cloudinary.com/dwbno71qd/image/upload/v1653254028/Realmod/parking-area_1_nmpkt0.png",
+      description: "Parking Space"
+    },
+    {
+      icon: "https://res.cloudinary.com/dwbno71qd/image/upload/v1653254028/Realmod/parking-area_1_nmpkt0.png",
+      description: "Parking Space"
+    },
+    {
+      icon: "https://res.cloudinary.com/dwbno71qd/image/upload/v1653254028/Realmod/parking-area_1_nmpkt0.png",
+      description: "Parking Space"
+    },
+    {
+      icon: "https://res.cloudinary.com/dwbno71qd/image/upload/v1653254028/Realmod/parking-area_1_nmpkt0.png",
+      description: "Parking Space"
+    },
+    {
+      icon: "https://res.cloudinary.com/dwbno71qd/image/upload/v1653254028/Realmod/parking-area_1_nmpkt0.png",
+      description: "Parking Space"
+    },
+    {
+      icon: "https://res.cloudinary.com/dwbno71qd/image/upload/v1653254028/Realmod/parking-area_1_nmpkt0.png",
+      description: "Parking Space"
+    },
+    {
+      icon: "https://res.cloudinary.com/dwbno71qd/image/upload/v1653254028/Realmod/parking-area_1_nmpkt0.png",
+      description: "Parking Space"
+    }
+  ]
   return (
-    <Card sx={{ maxWidth: 345 }}>
-    <CardActionArea>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-      </CardContent>
-    </CardActionArea>
-  </Card>
+    <section className="section-container">
+      <div class="contenedor">
+        <img src="https://res.cloudinary.com/veronicaduque/image/upload/v1653111006/RealMod/Our_Agents_ixzutp.png" />
+        <div class="centrado">
+          <span>Properties</span>
+          <p>Featured Listings</p>
+
+        </div>
+      </div>
+      <div className='containerListings'>
+        {data.map((item) => <Card sx={{ maxWidth: 307 }} >
+
+          <CardContent className="FeaturedCard" >
+            <div className='contentIcon'>
+              <img src={item.icon} />
+            </div>
+            <div className='featuredText'>
+              <span>{item.description}</span>
+            </div>
+          </CardContent>
+
+        </Card>)
+
+        }
+
+      </div>
+
+    </section>
   )
 }
 
