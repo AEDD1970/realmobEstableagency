@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { CardActionArea } from '@mui/material';
+
 import "../style/FeaturedCard.css";
 
 function FeaturedCards() {
@@ -60,7 +60,9 @@ function FeaturedCards() {
               <span>{item.description}</span>
             </div>
           </CardContent>
-
+          
+          <span className='circleIconArrow'> <img  src="https://res.cloudinary.com/veronicaduque/image/upload/v1653264683/RealMod/flecha_rrqfo2.png"/></span>
+  
         </Card>)
 
         }
