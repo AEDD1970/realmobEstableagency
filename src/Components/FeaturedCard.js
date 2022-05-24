@@ -50,22 +50,21 @@ function FeaturedCards() {
         </div>
       </div>
       <div className='containerListings'>
-        {data.map((item) => <Card sx={{ maxWidth: 307 }} >
-
-          <CardContent className="FeaturedCard" >
-            <div className='contentIcon'>
-              <img src={item.icon} />
-            </div>
-            <div className='featuredText'>
-              <span>{item.description}</span>
-            </div>
-          </CardContent>
-          
-          <span className='circleIconArrow'> <img  src="https://res.cloudinary.com/veronicaduque/image/upload/v1653264683/RealMod/flecha_rrqfo2.png"/></span>
-  
-        </Card>)
-
-        }
+        {data.map((item) => (
+          <div className='parentCard'>
+            <Card sx={{ width: 307 }} >
+              <CardContent className="FeaturedCard" >
+                <div className='contentIcon'>
+                  <img src={item.icon} />
+                </div>
+                <div className='featuredText'>
+                  <span>{item.description}</span>
+                </div>
+              </CardContent>
+            </Card>
+            <span className='circleIconArrow'> <img src="https://res.cloudinary.com/veronicaduque/image/upload/v1653264683/RealMod/flecha_rrqfo2.png" /></span>
+          </div>
+        ))}
 
       </div>
 

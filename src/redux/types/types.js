@@ -8,3 +8,7 @@ export const typesLogin = {
 export const typesRegister = {
     register: 'register'
 }
+
+export const typesAgent = {
+    register: 'agent'
+}
