@@ -1,21 +1,16 @@
 import { typesRegister } from '../types/types'
 
 const initialState = {
-    user : {}
+    user : ""
 }
 
 export const registerUserReducer = (state = initialState, action) => {
+    console.log('action >>> ',action )
     switch (action.type) {
         case typesRegister.register:
             return{
-                user: {
-                    name: action.payload.name,
-                lastName: action.payload.lastName,
-                phone: action.payload.phone
-                }
+                user: action.user.msg
              }
-
-
         default:
             return state
     }

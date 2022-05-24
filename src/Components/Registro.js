@@ -3,9 +3,11 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 import "../style/Registro.css"
-import { useDispatch } from 'react-redux';
-
+import { useDispatch, useSelector } from 'react-redux';
 import logo from '../image/Logo.png'
+import { registerUser } from '../redux/actions/actionRegisterUser';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
@@ -19,9 +21,11 @@ const SignupSchema = Yup.object().shape({
 });
 
 const Registro = () => {
-
+    const user= useSelector(store => store.register.user)
+    let navigate = useNavigate();
     const dispatch = useDispatch()
 
+    if(user.length !==0)return navigate("/login")
     return (
         <div className="divRegistro">
             <div className="logoRegistro">
@@ -36,6 +40,10 @@ const Registro = () => {
                     pass2: ''
                 }}
                 validationSchema={SignupSchema}
+                onSubmit={(values) => {
+                     dispatch(registerUser(values))
+                    Form.reset();
+                  }}
              
             >
                 {({ errors, touched }) => (
